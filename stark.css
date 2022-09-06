@@ -1,0 +1,155 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+.pic{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 40px;
+}
+
+.logo{
+    background-image: url("./images/logo.svg");
+    background-size: contain;
+    height: 30px;
+    width: 100%;
+    background-repeat: no-repeat
+}
+
+.image{
+    background-image: url("./images/illustration-mockups.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.content{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    word-spacing: 3px;
+
+}
+
+
+button{
+    border-radius: 20px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px 70px;
+    color: hsl(257, 40%, 49%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+button:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    
+}
+
+
+.icons{
+    margin-top: 40px;
+    
+ }
+
+i{
+    color: white;  
+}
+
+i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.xyz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px){
+
+    body{
+        min-height: 100vh;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        background-image: url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        
+        background-color: hsl(257, 40%, 49%);  
+    }
+
+    .pic{
+         width: 70%;
+    }
+
+    .xyz{
+        width: 40%;
+        padding: 20px;
+        
+    }
+
+    .image{
+        height: 500px;
+        width: 100%;
+    }
+    .content{
+        text-align: left;
+        font-size: 13px;
+        word-spacing: 0px;
+    }
+
+    .heading{
+        text-align: left;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    .icons{
+align-self: flex-end;
+        margin-top: 150px;
+    }
+
+    button{
+        margin-left: 0px;
+        align-self: flex-start;
+    }
+    
+
+}
